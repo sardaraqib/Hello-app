@@ -6,7 +6,7 @@ import requests
 import PIL
 from PIL import Image
 
-openai.api_key = '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'
+openai.api_key = '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'
 
 header=st.container()
 input_text=st.container()
