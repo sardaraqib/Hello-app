@@ -23,7 +23,7 @@ input_text=st.container()
 
 with header:
     st.header(" TExt to Image Gnerater Application")
-    st.header(os.environ.get("OPENAI_API_KEY"))
+    ##st.header(os.environ.get("OPENAI_API_KEY"))
 
 def generate_image(text):
     # Generate the image using OpenAI's DALL-E model
