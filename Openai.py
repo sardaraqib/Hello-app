@@ -5,8 +5,9 @@ import streamlit as st
 import requests
 import PIL
 from PIL import Image
+import os
 
-openai.api_key = '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'
+openai.api_key = os.environ.get("OPENAI_API_KEY")
 
 header=st.container()
 input_text=st.container()
