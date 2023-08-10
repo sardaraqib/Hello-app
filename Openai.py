@@ -7,7 +7,16 @@ import PIL
 from PIL import Image
 import os
 
-openai.api_key = os.environ.get("OPENAI_API_KEY")
+##openai.api_key = os.environ.get("OPENAI_API_KEY")
+# Load environment variables from .env file
+from dotenv import load_dotenv
+load_dotenv()
+
+# Get the API key from the environment variable
+api_key = os.getenv("OPENAI_API_KEY")
+
+# Set the API key for OpenAI
+openai.api_key = api_key
 
 header=st.container()
 input_text=st.container()
