@@ -1,7 +1,7 @@
 numpy
 pandas
 matplotlib
-plotly==4.14.3
+plotly==<desired_version>
 scikit-learn
 streamlit
 seaborn
