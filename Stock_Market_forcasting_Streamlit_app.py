@@ -54,7 +54,7 @@ columns= st.selectbox('Select the column to Plot',col)
 st.write("Selected Column")
 New_data=data[['Date',columns]] #only the selected colum will come
 st.write(New_data)
-fig=px.line(New_data,x='Date',y=columns,title="Closing prices of stocks",width=700,height=600) #using plotyly express
+fig=px.line(New_data,x='Date',y=columns,title="Closing prices of stocks",width=600,height=400) #using plotyly express
 st.plotly_chart(fig)
 
 #ADF test check stationary (means it have any trend)
@@ -111,7 +111,7 @@ fig.add_trace(go.Scatter(x=data["Date"],y=data[columns],mode='lines',name='Actua
 #add predicted data to the plot
 fig.add_trace(go.Scatter(x=prediction["Date"],y=prediction["predicted_mean"],mode='lines',name='Predicted',line=dict(color='red')))
 #set the title and axis labels
-fig.update_layout(title='Actual vs Predicted',xaxis_title="Date", yaxis_title='Price',width=1000,height=600)
+fig.update_layout(title='Actual vs Predicted',xaxis_title="Date", yaxis_title='Price',width=800,height=400)
 #display the plot
 st.plotly_chart(fig)
 
@@ -119,8 +119,8 @@ st.plotly_chart(fig)
 show_plots=False
 if st.button("Show seperate Plots"):
     if not show_plots:
-        st.write(px.line(x=data['Date'],y=data[columns], title='Actual',width=1200,height=400,labels={'x':'Date','y':'Price'}).update_traces(line_color='Yellow'))
-        st.write(px.line(x=prediction['Date'],y=prediction["predicted_mean"], title='Predicted',width=1200,height=400,labels={'x':'Date','y':'Price'}))
+        st.write(px.line(x=data['Date'],y=data[columns], title='Actual',width=800,height=400,labels={'x':'Date','y':'Price'}).update_traces(line_color='Yellow'))
+        st.write(px.line(x=prediction['Date'],y=prediction["predicted_mean"], title='Predicted',width=800,height=400,labels={'x':'Date','y':'Price'}))
         show_plots= True
     else:
         show_plots= False
