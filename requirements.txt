@@ -8,5 +8,4 @@ seaborn
 openai
 python-dotenv
 yfinance
-plotly.express
 statsmodels.api
