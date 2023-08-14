@@ -1,13 +1,12 @@
 numpy
 pandas
 matplotlib
-plotly
+plotly==4.14.3
 scikit-learn
 streamlit
 seaborn
 openai
 python-dotenv
 yfinance
-plotly_express
-plotly.graph_objects
-statsmodels.api
+
+statsmodels
