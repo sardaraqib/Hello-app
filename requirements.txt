@@ -9,7 +9,7 @@ openai
 python-dotenv
 yfinance
 PyPDF2
-io
+
 openai
 docx2txt
 pyperclip
