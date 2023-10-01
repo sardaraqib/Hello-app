@@ -10,7 +10,8 @@ import pyperclip
 
 import streamlit as st
 st.sidebar.header("select from the drop down") 
-st.sidebar.write("if you are new select the ** ""how to use" "** from the drop down ")
+st.sidebar.write("if you are new select user  then select ** ""how to use" "** from the drop down ")
+st.sidebar.write("select from the list do not click on button")
 pages = ["Home", "How to use", "Contact"]
  
 page = st.sidebar.selectbox("Menu", pages)
