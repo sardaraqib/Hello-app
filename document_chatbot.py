@@ -152,5 +152,7 @@ elif page == "How to use":
 
    
 elif page == "Contact":
-    st.title("Contact")
+    st.title("Queries")
+    st.subheader("For any problem contact us on this Email")
+    st.subheader("aqib51719@gmail.com")
         
