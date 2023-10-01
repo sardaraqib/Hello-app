@@ -108,7 +108,7 @@ if page == "Home":
   def main():
    #setting the title of the app
    st.subheader("Ask a question from the uploaded documents")
-   st.write("** After the question wait for 2Osecond then ask other question  its a testing phase does not have that much power **")
+   st.write("> After the question wait for 2Osecond then ask other question  its a testing phase does not have that much power ")
    uploaded_file=st.file_uploader('Chose a file',type=['pdf','docx','txt'])
    #checking if a file is uploaded 
    if uploaded_file is not None:
