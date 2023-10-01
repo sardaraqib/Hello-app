@@ -11,14 +11,14 @@ import pyperclip
 import streamlit as st
 st.sidebar.header("select from the drop down") 
 st.sidebar.write("if you are new select user  then select ** ""how to use" "** from the drop down ")
-st.sidebar.write("select from the list do not click on button")
+
 pages = ["Home", "How to use", "Contact"]
  
 page = st.sidebar.selectbox("Menu", pages)
 
 
-for p in pages:
-    st.sidebar.button(p)
+#for p in pages:
+    #st.sidebar.button(p)
 
 if page == "Home":
   st.title(" AI Document Chatbot Testing  Phase")
